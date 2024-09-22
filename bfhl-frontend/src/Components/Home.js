@@ -69,8 +69,6 @@ function App() {
         value={jsonInput}
         onChange={(e) => setJsonInput(e.target.value)}
         placeholder="Enter JSON input"
-        rows="5"
-        cols="50"
       />
       <button onClick={handleSubmit}>Submit</button>
       {error && <p className="error">{error}</p>}
