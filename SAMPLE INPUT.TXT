@@ -1,0 +1,10 @@
+{"data":["M", "1", "334", "4", "B"]}
+
+output
+
+Numbers:
+1 334 4
+Alphabets:
+B
+Highest Alphabet:
+M
