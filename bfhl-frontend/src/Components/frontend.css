@@ -106,23 +106,32 @@ input[type="checkbox"]:hover {
   border-radius: 6px;
   border: 1px solid #ddd;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
-.output-container:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+.output-section {
+  width: 30%; /* Adjust this width as needed */
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Output section */
 .output-section h3 {
   color: #007bff;
   margin-bottom: 10px;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .output-section ul {
   list-style-type: none;
   padding-left: 0;
+  text-align: center;
 }
 
 .output-section li {
@@ -135,10 +144,7 @@ input[type="checkbox"]:hover {
   color: #007bff;
 }
 
-/* Error message */
-.error {
-  color: red;
-  font-size: 1.1rem;
-  text-align: center;
-  margin-bottom: 10px;
+.output-container:hover .output-section {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
