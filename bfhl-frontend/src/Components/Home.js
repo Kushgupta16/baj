@@ -39,21 +39,21 @@ function App() {
     const { numbers, alphabets, highest_alphabet } = response;
 
     return (
-      <div>
+      <div className="output-container">
         {selectedOptions.includes('Numbers') && (
-          <div>
+          <div className="output-section">
             <h3>Numbers:</h3>
             <ul>{numbers.map((num, idx) => <li key={idx}>{num}</li>)}</ul>
           </div>
         )}
         {selectedOptions.includes('Alphabets') && (
-          <div>
+          <div className="output-section">
             <h3>Alphabets:</h3>
             <ul>{alphabets.map((char, idx) => <li key={idx}>{char}</li>)}</ul>
           </div>
         )}
         {selectedOptions.includes('Highest alphabet') && (
-          <div>
+          <div className="output-section">
             <h3>Highest Alphabet:</h3>
             <ul>{highest_alphabet.map((char, idx) => <li key={idx}>{char}</li>)}</ul>
           </div>
@@ -63,18 +63,18 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1>FILL AND CHECK</h1>
       <textarea
         value={jsonInput}
         onChange={(e) => setJsonInput(e.target.value)}
-        placeholder='Enter JSON input'
+        placeholder="Enter JSON input"
         rows="5"
         cols="50"
       />
       <button onClick={handleSubmit}>Submit</button>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      <div>
+      {error && <p className="error">{error}</p>}
+      <div className="checkbox-container">
         <label>
           <input
             type="checkbox"
