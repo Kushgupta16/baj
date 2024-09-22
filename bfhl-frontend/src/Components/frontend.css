@@ -26,7 +26,7 @@ body {
     font-size: 28px;
     margin-bottom: 25px;
     text-align: center;
-    color: #12f4bb;
+    color: #d30707;
   }
   
   textarea {
@@ -46,7 +46,7 @@ body {
     padding: 12px;
     border-radius: 8px;
     border: none;
-    background-color: #37ea0a;
+    background-color: #030303;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -54,7 +54,7 @@ body {
   }
   
   button:hover {
-    background-color: #004494;
+    background-color: #17f5e6;
   }
   
  
